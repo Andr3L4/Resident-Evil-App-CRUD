@@ -16,7 +16,7 @@ const UpdateData = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/characters/${id}`)
+      .get(`https://resident-evil-app-backend.onrender.com/characters/${id}`)
       .then((res) => {
         setCharacter(res.data);
         setName(res.data.name);
@@ -40,7 +40,7 @@ const UpdateData = () => {
     const data = { name, type /* , location  */ };
 
     axios
-      .put(`http://localhost:3000/characters/${id}`, data)
+      .put(`https://resident-evil-app-backend.onrender.com/characters/${id}`, data)
       .then(
         /* (res) => setProductData(res.data) */ () => {
           setField(true);

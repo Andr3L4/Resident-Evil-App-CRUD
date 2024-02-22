@@ -8,7 +8,7 @@ const CreateData = () => {
   const [charLocation, setCharLocation] = useState("");
   const [image, setImage] = useState("");
 
-  const API_URL = "http://localhost:3000";
+  const API_URL = "https://resident-evil-app-backend.onrender.com/";
 
   const navigate = useNavigate();
 

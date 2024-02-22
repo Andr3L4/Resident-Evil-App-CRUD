@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://resident-evil-app-backend.onrender.com/";
 
 const ShowData = () => {
   const [characters, setCharacters] = useState([]);
@@ -19,7 +19,7 @@ const ShowData = () => {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:3000/characters/${id}`).then(() => {
+    axios.delete(`https://resident-evil-app-backend.onrender.com/characters/${id}`).then(() => {
       getData();
     });
   };
