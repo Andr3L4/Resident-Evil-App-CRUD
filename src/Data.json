@@ -1,0 +1,64 @@
+{
+    "characters": [
+      {
+        "id": 1,
+        "name": "Chris Redfield",
+        "type": "Protagonist",
+        "health": 100,
+        "weapons": ["Knife", "Handgun"],
+        "location": "Raccoon City Police Department"
+      },
+      {
+        "id": 2,
+        "name": "Jill Valentine",
+        "type": "Protagonist",
+        "health": 95,
+        "weapons": ["Samurai Edge", "Shotgun"],
+        "location": "Raccoon City Police Department"
+      },
+      {
+        "id": 3,
+        "name": "Albert Wesker",
+        "type": "Antagonist",
+        "health": 150,
+        "weapons": ["Magnum", "Uroboros Virus"],
+        "location": "Umbrella Corporation Headquarters"
+      }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "name": "Green Herb",
+        "type": "Healing",
+        "effect": "+30 health",
+        "location": "Various locations"
+      },
+      {
+        "id": 2,
+        "name": "Handgun Ammo",
+        "type": "Ammunition",
+        "quantity": 15,
+        "location": "Raccoon City Police Department"
+      },
+      {
+        "id": 3,
+        "name": "Lockpick",
+        "type": "Tool",
+        "usage": "Opens simple locks",
+        "location": "Jill Valentine's inventory"
+      }
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "name": "Raccoon City Police Department",
+        "description": "A zombie-infested police station"
+      },
+      {
+        "id": 2,
+        "name": "Umbrella Corporation Headquarters",
+        "description": "Secret research facility"
+      }
+    ]
+  }
+
