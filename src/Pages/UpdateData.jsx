@@ -8,7 +8,10 @@ const UpdateData = () => {
   const [field, setField] = useState(false);
   const [name, setName] = useState("");
   const [type, setType] = useState("");
-  const [charLocation, setCharLocation] = useState("");
+  const [image, setImage] = useState("");
+  const [location, setLocation] = useState("");
+  const [weapon1, setWeapon1] = useState("");
+  const [weapon2, setWeapon2] = useState("");
 
   const { id } = useParams();
 
@@ -21,6 +24,10 @@ const UpdateData = () => {
         setCharacter(res.data);
         setName(res.data.name);
         setType(res.data.type);
+        setImage(res.data.image);
+        setLocation(res.data.location);
+        setWeapon1(res.data.weapon[0]);
+        setWeapon2(res.data.weapon[1]);
         /*         setCharLocation(res.data.location); */
       })
 
@@ -37,7 +44,7 @@ const UpdateData = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const data = { name, type /* , location  */ };
+    const data = { name, type, image, location, weapons:[weapon1, weapon2] };
 
     axios
       .put(`https://resident-evil-app-backend.onrender.com/characters/${id}`, data)
@@ -79,7 +86,40 @@ const UpdateData = () => {
           }}
         />
 
-        <label>Character Location </label>
+<label>Character Image </label>
+        <input
+          type="text"
+          value={image}
+          onChange={(e) => {
+            setImage(e.target.value);
+          }}
+        />
+        <label>Location </label>
+        <input
+          type="text"
+          value={location}
+          onChange={(e) => {
+            setLocation(e.target.value);
+          }}
+        />
+<label>Weapon 1 </label>
+        <input
+          type="text"
+          value={weapon1}
+          onChange={(e) => {
+            setWeapon1(e.target.value);
+          }}
+        />
+
+<label>Weapon 2</label>
+        <input
+          type="text"
+          value={weapon2}
+          onChange={(e) => {
+            setWeapon2(e.target.value);
+          }}
+        />
+        {/*<label>Character Location </label>
         <textarea
           id="DataDoc"
           cols="30"
@@ -88,7 +128,7 @@ const UpdateData = () => {
           onChange={(e) => {
             setCharLocation(e.target.value);
           }}
-        ></textarea>
+        ></textarea>*/}
 
         {/*                 <p>
                     <label>Character Image Url: </label>
