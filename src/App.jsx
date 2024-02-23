@@ -16,7 +16,6 @@ function App()
   return (
     <>   
    
-     <Navbar/>
         <Routes>
           <Route  path='/' element={<ShowData />} />
           <Route  path='/about' element={<About />} />
