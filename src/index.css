@@ -54,3 +54,11 @@ body{margin: 0 auto;}
 .read-the-docs {
   color: #888;
 }
+
+.navbar-container{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: white;
+  text-decoration: double;
+}
