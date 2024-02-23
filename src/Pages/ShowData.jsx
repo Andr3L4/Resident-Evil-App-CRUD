@@ -24,7 +24,7 @@ const ShowData = () => {
     });
   };
   return (
-    <div>
+    <div className="container">
       <Link to={"/createData"}>Add More Characters</Link>
       <h1>Data Selection</h1>
       <table>
@@ -44,7 +44,7 @@ const ShowData = () => {
           {characters &&
             characters.map((character) => {
               return (
-                <tr key={character.id}>
+                <tr key={character.id} >
                   <td>{character.name}</td>
                   <td>{character.type}</td>
                   <td>

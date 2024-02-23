@@ -1,64 +1,224 @@
 {
-    "characters": [
-      {
-        "id": 1,
-        "name": "Chris Redfield",
-        "type": "Protagonist",
-        "health": 100,
-        "weapons": ["Knife", "Handgun"],
-        "location": "Raccoon City Police Department"
-      },
-      {
-        "id": 2,
-        "name": "Jill Valentine",
-        "type": "Protagonist",
-        "health": 95,
-        "weapons": ["Samurai Edge", "Shotgun"],
-        "location": "Raccoon City Police Department"
-      },
-      {
-        "id": 3,
-        "name": "Albert Wesker",
-        "type": "Antagonist",
-        "health": 150,
-        "weapons": ["Magnum", "Uroboros Virus"],
-        "location": "Umbrella Corporation Headquarters"
-      }
-    ],
-    "items": [
-      {
-        "id": 1,
-        "name": "Green Herb",
-        "type": "Healing",
-        "effect": "+30 health",
-        "location": "Various locations"
-      },
-      {
-        "id": 2,
-        "name": "Handgun Ammo",
-        "type": "Ammunition",
-        "quantity": 15,
-        "location": "Raccoon City Police Department"
-      },
-      {
-        "id": 3,
-        "name": "Lockpick",
-        "type": "Tool",
-        "usage": "Opens simple locks",
-        "location": "Jill Valentine's inventory"
-      }
-    ],
-    "locations": [
-      {
-        "id": 1,
-        "name": "Raccoon City Police Department",
-        "description": "A zombie-infested police station"
-      },
-      {
-        "id": 2,
-        "name": "Umbrella Corporation Headquarters",
-        "description": "Secret research facility"
-      }
-    ]
-  }
+  "characters": [
+    {
+      "id": 1,
+      "name": "Albert Weskers",
+      "image": "https://residentevilpodcast.com/wp-content/uploads/2021/08/albertwesker-e1634129491880.jpg",
+      "type": "Antagonists",
+      "location": "Raccoon City Police Department",
+      "weapons": ["Samurai Edge", "Wesker's Samurai Edge"]
+    },
+    {
+      "id": 2,
+      "name": "Leon S. Kennedy",
+      "image": "https://i.pinimg.com/474x/b9/18/d8/b918d8032467ec3472cdc37b5ccf42dc.jpg",
+      "type": "Protagonist",
+      "health": 130,
+      "weapons": ["Handgun", "Knife"],
+      "location": "Raccoon City Police Department"
+    },
+    {
+      "id": 3,
+      "name": "Claire Redfield",
+      "image": "https://i.pinimg.com/736x/53/24/bc/5324bcef33e83fa6f24df60e0dae5561.jpg",
+      "type": "Protagonist",
+      "health": 105,
+      "weapons": ["SLS 60", "Grenade Launcher"],
+      "location": "Raccoon City Police Department"
+    },
+    {
+      "id": 4,
+      "name": "HUNK",
+      "image": "https://pbs.twimg.com/media/FyHOjHrWAAAEpgl.png:large",
+      "type": "Mercenary",
+      "health": 130,
+      "weapons": ["Silent Submachine Gun", "Combat Knife"],
+      "location": "Umbrella Secret Laboratory"
+    },
+    {
+      "id": 5,
+      "name": "Sherry Birkin",
+      "image": "https://www.evilresource.com/images/data/full/re2remake/sherry-birkin.png",
+      "type": "Supporting Character",
+      "health": 95,
+      "weapons": ["Wristband", "Flash Grenade"],
+      "location": "Umbrella Orphanage"
+    },
+    {
+      "id": 6,
+      "name": "Carlos Oliveira",
+      "image": "https://i.pinimg.com/736x/35/27/4d/35274dbf61427ba64c76488189e74fdf.jpg",
+      "type": "Protagonist",
+      "health": 115,
+      "weapons": ["M4A1 Assault Rifle", "Grenade Launcher"],
+      "location": "Raccoon City Police Department"
+    },
+    {
+      "id": 7,
+      "name": "Rebecca Chambers",
+      "image": "https://www.giantbomb.com/a/uploads/scale_small/7/70497/3463599-001b.jpg",
+      "type": "Protagonist",
+      "health": 100,
+      "weapons": ["Chemical Flamethrower", "First Aid Spray"],
+      "location": "Raccoon City Hospital"
+    },
+    {
+      "id": 8,
+      "name": "Jack Krauser",
+      "image": "https://image.janitorai.me/bot-avatars/cf8dbd9d-b429-4c6c-a1ac-ae93b07ddb5b_0do3ot.jpeg",
+      "type": "Antagonist",
+      "health": 140,
+      "weapons": ["Bow", "Arm Blade"],
+      "location": "Los Iluminados Base"
+    },
+    {
+      "id": 9,
+      "name": "Billy Coen",
+      "image": "https://i.pinimg.com/736x/7a/23/ca/7a23cac46176d3baed6b42e989c290f5.jpg",
+      "type": "Protagonist",
+      "health": 105,
+      "weapons": ["Handgun", "Molotov Cocktails"],
+      "location": "Ecliptic Express"
+    },
+    {
+      "id": 10,
+      "name": "Ashley Graham",
+      "image": "https://i.pinimg.com/564x/6d/ac/92/6dac9219340c6ac0c364ed2576335b81.jpg",
+      "type": "Supporting Character",
+      "health": 90,
+      "weapons": ["Plaga Removal Device", "Stun Gun"],
+      "location": "Rural Spain"
+    },
+    {
+      "id": 11,
+      "name": "Wesker's Tyrant",
+      "image": "https://i.pinimg.com/736x/b0/79/2e/b0792e7d1ccb3b0028c62c1ca46c5a54.jpg",
+      "type": "Bio-Weapon",
+      "health": 200,
+      "weapons": ["Gatling Gun", "Superhuman Strength"],
+      "location": "Umbrella Corporation Headquarters"
+    },
+    {
+      "id": 12,
+      "name": "Sheva Alomar",
+      "image": "https://residentevilpodcast.com/wp-content/uploads/2021/08/shevaalomar.jpg",
+      "type": "Protagonist",
+      "health": 110,
+      "weapons": ["AK-74", "Proximity Mines"],
+      "location": "Kijuju"
+    },
+    {
+      "id": 13,
+      "name": "Oswell E. Spencer",
+      "image": "https://i.pinimg.com/474x/c4/08/ea/c408ea0145125850b2d4fb07a07a0980.jpg",
+      "type": "Antagonist",
+      "health": 160,
+      "weapons": ["Cane Sword", "Tyrant Program"],
+      "location": "Umbrella Corporation Founder's Mansion"
+    },
+    {
+      "id": 14,
+      "name": "Alex Wesker",
+      "image": "https://www.evilresource.com/images/data/full/rerevelations2/monster-alex.png",
+      "type": "Antagonist",
+      "health": 145,
+      "weapons": ["Compound Bow", "T-Phobos Virus"],
+      "location": "Sonido de Tortuga Island"
+    },
+    {
+      "id": 15,
+      "name": "Ethan Winters",
+      "image": "https://static.miraheze.org/thefinalrumblewiki/f/f6/Ethan_Winters.png",
+      "type": "Protagonist",
+      "health": 120,
+      "weapons": ["Winters Model-01", "Mia's Combat Knife"],
+      "location": "Louisiana"
+    },
+    {
+      "id": 16,
+      "name": "Marguerite Baker",
+      "image": "https://assets.mycast.io/characters/marguerite-baker-8009660-normal.jpg?1663790640",
+      "type": "Antagonist",
+      "health": 130,
+      "weapons": ["Bug Swarm", "Enhanced Strength"],
+      "location": "Louisiana"
+    },
+    {
+      "id": 17,
+      "name": "Chris Redfield (Not a Hero)",
+      "image": "https://i.imgur.com/0G5KCW8.jpg",
+      "type": "Protagonist",
+      "health": 115,
+      "weapons": ["Thor's Hammer", "Anti-Regen Ammo"],
+      "location": "Unknown"
+    },
+    {
+      "id": 18,
+      "name": "Eveline",
+      "image": "https://pbs.twimg.com/profile_images/1334596187689791500/hhhPvet7_400x400.jpg",
+      "type": "Antagonist",
+      "health": 100,
+      "weapons": ["Molded Creatures", "Telepathic Abilities"],
+      "location": "Dulvey, Louisiana"
+    },
+    {
+      "id": 19,
+      "name": "Ada Wong",
+      "image": "https://cdn.vox-cdn.com/thumbor/zxY4foxEIJj_v1MunlZ0aJ3V31w=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24578713/ada_wong.jpg",
+      "type": "Protagonist",
+      "health": 125,
+      "weapons": ["Crossbow", "Grapple Gun"],
+      "location": "Various Locations"
+    },
+    {
+      "id": 20,
+      "name": "Jill Valentine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtXGZ3Y_XNqc6xObbnXrZt1eUC53HuS8mRN2pr1YUTgw&s",
+      "type": "Protagonist",
+      "health": 135,
+      "weapons": ["Samurai Edge", "Rocket Launcher"],
+      "location": "Various Locations"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "Green Herb",
+      "type": "Healing",
+      "effect": "+30 health",
+      "location": "Various locations"
+    },
+    {
+      "id": 2,
+      "name": "Handgun Ammo",
+      "type": "Ammunition",
+      "quantity": 15,
+      "location": "Raccoon City Police Department"
+    },
+    {
+      "id": 3,
+      "name": "Lockpick",
+      "type": "Tool",
+      "usage": "Opens simple locks",
+      "location": "Jill Valentine's inventory"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Raccoon City Police Department",
+      "description": "A zombie-infested police station"
+    },
+    {
+      "id": 2,
+      "name": "Umbrella Corporation Headquarters",
+      "description": "Secret research facility"
+    },
+    {
+      "id": 3,
+      "name": "Raccoon City Hospital",
+      "description": "Emergency medical facility"
+    }
+  ]
+}
 

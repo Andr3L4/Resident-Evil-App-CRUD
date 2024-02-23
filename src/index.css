@@ -1,12 +1,26 @@
 #root {
-  max-width: 1280px;
+  
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 7rem;
   text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+cursor: crosshair;
+border:15px solid red;
+
+
+
+
+
+
 }
 
+body{margin: 0 auto;}
+
 .logo {
-  height: 6em;
+  height: 7em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;

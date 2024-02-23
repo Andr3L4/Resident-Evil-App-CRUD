@@ -6,6 +6,7 @@ import ShowData from './Pages/ShowData'
 import About from './Pages/About'
 import CreateData from './Pages/CreateData'
 import UpdateData from './Pages/UpdateData'
+import MyReasons from './Pages/MyReasons'
 
 
 
@@ -13,13 +14,15 @@ function App()
 {
 
   return (
-    <>
-{/*     <Navbar /> */}
+    <>   
+   
+     
         <Routes>
           <Route  path='/' element={<ShowData />} />
           <Route  path='/about' element={<About />} />
           <Route  path='/createData' element={<CreateData />} />
           <Route  path='/updateData/:id' element={<UpdateData/>} />
+          <Route  path='/JohnCena' element={<MyReasons/>} />
         </Routes>
       {/* <CreateProduct /> */}
       {/* <ShowProduct /> */}
